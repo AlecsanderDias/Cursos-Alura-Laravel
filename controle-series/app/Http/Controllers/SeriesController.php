@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class SeriesController extends Controller
 {
     public function index(Request $request) {
-        $testeController = 'Testando o Laravel e o Blade, simples assim!';
+        $testeController = ['Digimon', 'Pokémon', 'YuGiOh', 'LoL'];
         return view('series.index')->with("teste", $testeController);
     }
     public function create() {
